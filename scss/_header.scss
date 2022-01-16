@@ -1,0 +1,70 @@
+@keyframes slideMenu {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+header {
+    background: rgba(2, 56, 89, 0.7);
+    backdrop-filter: blur(4px);
+    height: 106px;
+    display: flex;
+    align-items: center;
+    padding: 0.625rem 0;
+
+    width: 100%;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .menu-container {
+            display: flex;
+            align-items: center;
+            ul {
+                display: flex;
+                list-style: none;
+                li {
+                    margin-right: 1rem;
+                    position: relative;
+                    a {
+                        display: inline-block;
+                    }
+                    &::before {
+                        content: "";
+                        height: 3px;
+                        background: var(--brand-blue-2);
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0;
+                        transition: all 0.5s ease;
+                    }
+                    &:hover::before {
+                        animation: slideMenu 0.5s forwards;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+                margin-right: 2.5rem;
+            }
+            button {
+                height: 3rem;
+                padding: 0 3rem;
+                background: transparent;
+                border: 1px solid var(--brand-blue-2);
+                box-sizing: border-box;
+                border-radius: 8px;
+                color: var(--white);
+                transition: all 0.3s ease;
+                &:hover {
+                    background: var(--brand-blue-2);
+                    color: var(--brand-blue-strong);
+                }
+            }
+        }
+    }
+}
