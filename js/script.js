@@ -55,3 +55,24 @@ function handleMenu(event) {
 }
 
 menuMobile()
+
+const myAddressesArray = [
+    './img/background1.jpg',
+    './img/background2.jpg',
+    './img/background3.jpg',
+    './img/background4.jpg',
+    './img/bg-inteligence-corporate.jpg',
+    './img/bg-clipping-strategic.jpg'
+]
+
+const randomBgAddress =
+    myAddressesArray[Math.floor(Math.random() * myAddressesArray.length)]
+
+function randomImage() {
+    const heroSection = document.getElementById('home')
+    heroSection.style.backgroundImage = 'url(' + randomBgAddress + ')'
+    // for (let index = 0; index < myAddressesArray.length; index++) {
+
+    // }
+}
+randomImage()
