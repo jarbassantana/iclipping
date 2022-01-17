@@ -13,10 +13,15 @@ menuFixed()
 
 function scrollMenu() {
     const menuLinks = document.querySelectorAll('.menu-container a[href^="#"]')
+    const scrollBtn = document.querySelector('.scroll-bottom a[href^="#"]')
     if (menuLinks) {
         menuLinks.forEach(link => {
             link.addEventListener('click', handleClick)
         })
+    }
+
+    if (scrollBtn) {
+        scrollBtn.addEventListener('click', handleClick)
     }
 }
 
@@ -24,7 +29,7 @@ function handleClick(event) {
     event.preventDefault()
     const href = event.currentTarget.getAttribute('href')
     const section = document.querySelector(href)
-
+    console.log('fui clicado')
     // forma alternativa
     const topo = section.offsetTop
     window.scrollTo({
