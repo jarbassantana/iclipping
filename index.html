@@ -1,59 +1,363 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-            rel="stylesheet"
-        />
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>iClipping | Inteligência na Informação</title>
-        <link rel="stylesheet" href="./css/main.css" />
-    </head>
-    <body>
-        <header>
-            <nav class="container">
-                <img
-                    src="./img/logo-iclipping.png"
-                    alt="logo iclipping"
-                    class="logo"
-                />
-                <div class="menu-container">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Institucional</a></li>
-                        <li><a href="#">Soluções Estratégicas</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                    <button type="button">Login</button>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iClipping | Inteligência na Informação</title>
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <nav class="container">
+            <img src="./img/logo-iclipping.png" alt="logo iclipping" class="logo" />
+            <div class="menu-container">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Institucional</a></li>
+                    <li><a href="#aplication">Aplicação</a></li>
+                    <li><a href="#analyst">Soluções Estratégicas</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <button type="button" class="btn-login">Login</button>
+                <button id="btn-mobile-js" class="btn-mobile"><img src="./img/btn-mobile.svg"
+                        alt="button mobile"></button>
+            </div>
+        </nav>
+    </header>
+    <div class="menu-mobile">
+        <div class="overlay js-overlay"></div>
+        <aside>
+            <img src="./img/logo-iclipping.png" alt="logo iclipping" class="logo" />
+            <ul class="menu-mobile-ul">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Institucional</a></li>
+                <li><a href="#aplication">Aplicação</a></li>
+                <li><a href="#analyst">Soluções Estratégicas</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <button type="button" class="btn-login">Login</button>
+        </aside>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-container">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="info-hero-content">
+                <h1>Monitoramente e Análise de Mídia</h1>
+                <h3>
+                    Informações inteligentes para você e tudo o que é
+                    relevante para o seu negócio.
+                </h3>
+                <a href="#" class="btn-cta">Fale com especialista<img src="./img/arrow.svg" alt="arrow" /></a>
+            </div>
+            <div class="img-hero-content">
+                <img src="./img/model-hero-section.png" alt="model hero section" />
+                <span class="note-emoji"><img src="./img/note-floating.png" alt="notebook emoji"></span>
+                <span class="graphic-emoji"><img src="./img/graphic-floating.png" alt="graphic emoji"></span>
+            </div>
+        </div>
+        <div class="scroll-bottom">
+            <a href="#about"><img src="./img/scroll-bottom.svg" alt="Scroll button"></a>
+        </div>
+
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about">
+        <div class="container">
+            <h2 class="title-section">Sobre a Empresa</h2>
+            <h3 class="subtitle-section">
+                Apaixonados por comunicação, somos uma mistura perfeita
+                entre jornalismo e tecnologia.
+            </h3>
+            <p>
+                A iClipping não é apenas uma agência de clipping. Com uma
+                equipe formada por profisionais de diversos setores,
+                oferecemos soluções personalizadas para atender o perfil de
+                cada cliente. A parceria entre jornalistas e tecnólogos
+                resulta em uma poderosa combinação capaz de criar análises
+                do Big Data essenciais para o aumento da competitividade de
+                sua empresa ou produto.
+            </p>
+        </div>
+    </section>
+
+    <!-- INTELIGENCE CORPORATE -->
+    <section class="inteligence-corporate">
+        <div class="container">
+            <div class="inteligence-corporate-content">
+                <h3>
+                    O que é <span>Inteligência Corporativa</span> para a sua
+                    empresa?
+                </h3>
+                <p>
+                    A iClipping não trabalha com cartilhas prontas sobre
+                    como lidar com os dados de sua empresa. Criamos uma
+                    perspectiva única e personalizada para as necessidades
+                    de seu negócio, com uma abordagem interdisciplinar e que
+                    usa a tecnologia para entender o fator humano em
+                    análises quantitativas e qualitativas.
+                </p>
+                <p>
+                    Contamos com uma equipe formada por técnicos e
+                    jornalistas, que transforma a Big Data em passos
+                    certeiros para a sua jornada de comunicação corporativa,
+                    alavancando a competitividade de sua empresa ou produto.
+                    Trabalhamos também com relatórios para marketing
+                    político e com um monitoramento especial para o setor
+                    esportivo.
+                </p>
+                <a class="btn-cta" href="#">Fale com o especialista<img src="./img/arrow.svg" alt="arrow" /></a>
+            </div>
+            <div class="inteligence-corporate-img-content">
+                <img src="./img/img1.png" alt="image model 1" />
+            </div>
+        </div>
+    </section>
+
+    <!-- COMUNICATION CORPORATE -->
+    <section class="comunication-corporate">
+        <div class="container">
+            <div class="comunication-corporate-img-content">
+                <img src="./img/img2.svg" alt="image model 2" />
+            </div>
+            <div class="comunication-corporate-content">
+                <h3>
+                    Mensurando a <span>comunicação corporativa</span>
+                </h3>
+                <p>
+                    Com a iClipping, o destaque que sua empresa ganha em canais de comunicação pode gerar valores
+                    inesperados, graças à nossas análises de mensuração do preço e do impacto de cada notícia. Criamos
+                    um sistema tecnológico e inteligente para entender o que está dando certo e o que está dando errado
+                    em sua comunicação, com relatórios didáticos e bem fundamentados. Sem ilusões, seu próximo passo
+                    pode ser dado com a precisão necessária.
+                </p>
+                <a class="btn-cta" href="#">Fale com o especialista<img src="./img/arrow.svg" alt="arrow" /></a>
+            </div>
+    </section>
+
+    <!-- NOTICE SECTION -->
+    <section class="notice">
+        <div class="container">
+            <h3>Está dando certo? Como o público <span>recebe a notícia</span>.</h3>
+            <p>A regra do “falem mal mas falem de mim” não é tão benéfica para a reputação de uma empresa. Gestão de
+                comunicação corporativa é também gestão de reputação e entender como uma notícia está sendo recebida é
+                uma prioridade da iClipping. Com inteligência artificial e sensibilidade analítica, entregamos uma visão
+                clara dos sentimentos e reações geradas em seu público alvo. Assim, os sucessos e os erros geram
+                estratégias mais fortes no futuro. </p>
+        </div>
+    </section>
+
+    <!-- MONITORING CORPORATE -->
+    <section class="monitoring-corporate">
+        <div class="container">
+            <div class="monitoring-corporate-content">
+                <h3>
+                    Monitoramento de <span> notícias 24 horas</span>
+                </h3>
+                <p>
+                    São milhares de canais de comunicação monitorados em tempo real. Colhemos, tratamos e apresentamos
+                    os resultados de suas campanhas de marketing e comunicação e também os de seus concorrentes. Em cada
+                    caso, entendemos qual é a melhor estratégia de monitoramento para a sua empresa, com buscas por
+                    palavras-chave, com o nome das marcas ou com termos que se relacionam à sua área. Você entende o
+                    impacto de sua marca no mercado e também entende como o mercado recebe a presença de sua marca.
+                </p>
+
+                <a class="btn-cta" href="#">Fale com o especialista<img src="./img/arrow.svg" alt="arrow" /></a>
+            </div>
+            <div class="monitoring-corporate-img-content">
+                <img src="./img/img3.svg" alt="image model 3" />
+            </div>
+        </div>
+    </section>
+
+    <!-- MONITORING 24H -->
+
+    <section class="monitoring-corporate-2">
+        <div class="container">
+            <div class="monitoring-corporate-img-content-2">
+                <img src="./img/img4.svg" alt="image model 4" />
+            </div>
+            <div class="monitoring-corporate-content-2">
+                <h3>
+                    Monitoramento de <span> notícias 24 horas</span>
+                </h3>
+                <p>
+                    São milhares de canais de comunicação monitorados em tempo real. Colhemos, tratamos e apresentamos
+                    os resultados de suas campanhas de marketing e comunicação e também os de seus concorrentes. Em cada
+                    caso, entendemos qual é a melhor estratégia de monitoramento para a sua empresa, com buscas por
+                    palavras-chave, com o nome das marcas ou com termos que se relacionam à sua área. Você entende o
+                    impacto de sua marca no mercado e também entende como o mercado recebe a presença de sua marca.
+                </p>
+
+                <a class="btn-cta" href="#">Fale com o especialista<img src="./img/arrow.svg" alt="arrow" /></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- APLICATION SECTION -->
+    <section id="aplication">
+        <div class="container">
+            <h2 class="title-section">Aplicações da iClipping</h2>
+            <div class="aplication-content">
+                <div class="aplication-content-card">
+                    <img src="./img/moneybag.svg" alt="icon moneybag">
+                    <h3>Para empresas</h3>
+                    <div></div>
+                    <p>Toda a tecnologia e inteligência da iClipping aplicada em relatórios
+                        precisos sobre a presença midiática de sua empresa nos canais
+                        especializados ou de grande alcance. Saiba tudo sobre seu avanço e o de seus concorrentes.</p>
                 </div>
-            </nav>
-        </header>
-        <section class="hero-container">
-            <div class="hero-overlay"></div>
-            <div class="container">
-                <div class="info-hero-content">
-                    <h1>Monitoramente e Análise de Mídia</h1>
-                    <h3>
-                        Informações inteligentes para você e tudo o que é
-                        relevante para o seu negócio.
-                    </h3>
-                    <a href="#"
-                        >Fale com especialista<img
-                            src="./img/arrow.svg"
-                            alt="arrow"
-                    /></a>
+                <div class="aplication-content-card">
+                    <img src="./img/marketing.svg" alt="icon megafone">
+                    <h3>Para marketing político</h3>
+                    <div></div>
+                    <p>A urgência e o timing das campanhas políticas exigem uma inteligência aprofundada e a tecnologia
+                        pode fazer toda a diferença. Com os relatórios governamentais de Clipping, você entende os
+                        pontos críticos e a popularidade da campanha de acordo com as regiões. </p>
                 </div>
-                <div class="img-hero-content">
-                    <img
-                        src="./img/model-hero-section.png"
-                        alt="model hero section"
-                    />
+                <div class="aplication-content-card">
+                    <img src="./img/governament.svg" alt="icon governament">
+                    <h3>Para gestões governamentais</h3>
+                    <div></div>
+                    <p>Inteligência aplicada para entender a popularidade da gestão em áreas específicas e visão total
+                        das notícias. Os relatórios governamentais da iClipping são ideais para acompanhar as mudanças
+                        de opinião de acordo com as ações tomadas e criar estratégias inteligentes. </p>
+                </div>
+                <div class="aplication-content-card">
+                    <img src="./img/volei.svg" alt="icon volei">
+                    <h3>Para os esportes</h3>
+                    <div></div>
+                    <p>Existe muito em jogo com a dinâmica de reputação e de investimento em clubes esportivos.
+                        Inteligência aplicada aos resultados de contratações e decisões são imprescindíveis para um boi
+                        ROI esportivo e para a tomada de decisões. </p>
                 </div>
             </div>
-        </section>
-    </body>
+        </div>
+    </section>
+
+    <!-- ANALYST SECTION -->
+    <section id="analyst">
+        <div class="container">
+            <h2 class="title-section">Análises</h2>
+        </div>
+        <div class="relatories-content">
+            <div class="container">
+                <div class="relatories-content-img"><img src="./img/analyst-img.svg" alt="analyst illustration"></div>
+                <div class="relatories-content-info">
+                    <h3>Relatórios e Análises</h3>
+                    <p>Quantitativo e qualitativo, apresentando números reais de como a empresa está no mercado.
+                        </br>
+                        </br>
+                        Nossos relatórios são o resultado da coleta de informações de diversas fontes de dados. Nossas
+                        análises fazem o cruzamento do valor que essas informações têm perante o seu produto, com a
+                        variedade, volume e veracidade das fontes. Some-se à isso a velocidade na coleta e processamento
+                        dos dados, capaz de gerar com agilidade informações que irão ajudá-lo a tomar decisões mais
+                        efetivas.</p>
+                    <a class="btn-cta" href="#">Fale com o especialista<img src="./img/arrow.svg" alt="arrow" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="clipping-strategic-content">
+            <div class="container">
+                <div class="clipping-content-info">
+                    <h3>Clipping Estratégico</h3>
+                    <p>Gestão de informações que podem impactar seu Macroambiente.
+                        </br>
+                        </br>
+                        Coletamos dados nacionais e regionais relacionados à sua área de atuação, monitorando o mercado
+                        e seus concorrentes. O resultado são análises eficientes do cruzamento desses dados com o perfil
+                        do seu negócio.</p>
+                    <a class="btn-cta" href="#">Fale com o especialista<img src="./img/arrow.svg" alt="arrow" /></a>
+                </div>
+                <div class="clipping-content-img"><img src="./img/bot-clipping.png" alt="Bot iClipping"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- INTELIGENCE STRATEGIC SECTION -->
+    <section id="inteligence-strategic">
+        <div class="container">
+            <h2 class="title-section">Inteligência e Estratégia</h2>
+            <h3 class="subtitle-section">Os principais serviços para você monitorar suas campanhas e a de seus
+                concorrentes. Tenha acesso 24
+                horas por dia à informações estratégicas sobre seu segmento.</h3>
+            <div class="inteligence-strategic-content">
+                <div class="inteligence-strategic-card-content">
+                    <img src="./img/briefcase.svg" alt="icon briefcase">
+                    <h3>Relatórios Empresariais</h3>
+                    <p>Relatórios com a presença midiática de sua empresa e análise de suas campanhas e de seus
+                        concorrentes.</p>
+                </div>
+                <div class="inteligence-strategic-card-content">
+                    <img src="./img/home.svg" alt="icon home">
+                    <h3>Relatórios Governamentais</h3>
+                    <p>Estudo profundo de dados para identificar pontos críticos em campanhas e popularidade em
+                        determinadas regiões.</p>
+                </div>
+                <div class="inteligence-strategic-card-content">
+                    <img src="./img/football.svg" alt="icon football">
+                    <h3>Relatórios Esportivos</h3>
+                    <p>Análise de ROI esportivo e rastreamento de dados imprescindíveis para tomada e decisão de ações
+                        efetivas.</p>
+                </div>
+                <div class="inteligence-strategic-card-content">
+                    <img src="./img/newspaper.svg" alt="icon newspaper">
+                    <h3>Marketing Político</h3>
+                    <p>Relatório de dados em massa para soluções de problemas geopolíticos e feedback estratégico para
+                        ações de partidos
+                        concorrentes.</p>
+                </div>
+                <div class="inteligence-strategic-card-content">
+                    <img src="./img/envelope.svg" alt="icon envelope">
+                    <h3>Newsletter Diária</h3>
+                    <p>Receba em seu e-mail relatórios com análises de profissionais especializados em comunicação
+                        estratégica com
+                        posicionamento em índices e gráficos.</p>
+                </div>
+                <div class="inteligence-strategic-card-content">
+                    <img src="./img/chat.svg" alt="icon chatbox">
+                    <h3>Sistema de Alertas</h3>
+                    <p>Dispomos de sistema de alertas via aplicativo, enviando em tempo real informações de qualidade
+                        para movimentos decisivos
+                        nas operações de sua empresa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="title-section">Solicite uma apresentação!</h2>
+            <h3 class="subtitle-section">Ainda está em dúvida sobre a eficácia do monitoramento estratégico? Cadastre
+                seu e-mail abaixo para que
+                um de nossos
+                analistas entre em contato e tire todas as suas dúvidas sobre nossa gestão estratégica.</h3>
+            <form action="" class="form-content">
+                <input type="email" name="" id="" placeholder="Digite seu melhor e-mail">
+                <button type="submit">Enviar Contato</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+            <img src="./img/iclipping-logo-footer.png" alt="iclipping footer logo ">
+            <span>© iClipping Monitoramento Estratégico. Todos os direitos reservados.</span>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
 </html>

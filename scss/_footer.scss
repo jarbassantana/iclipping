@@ -1,0 +1,7 @@
+.footer {
+    background: linear-gradient(269.77deg, #05c7f2 -1.69%, #0477bf 99.86%);
+    padding: 2rem 0;
+    .container {
+        @include flex(column, center, center);
+    }
+}

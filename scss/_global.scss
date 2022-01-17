@@ -1,3 +1,4 @@
+@import "mixins";
 * {
     margin: 0;
     padding: 0;
@@ -15,21 +16,26 @@
     --brand-black: #282828;
 }
 
-@media (max-width: 1080px) {
+@include responsive(1080px) {
     html {
         font-size: 93.75%;
     }
 }
 
-@media (max-width: 720px) {
+@include responsive(720px) {
     html {
         font-size: 87.5%;
     }
 }
 
+// html {
+//     scroll-behavior: smooth;
+// }
+
 body {
     background: var(--brand-black);
     color: var(--white);
+    overflow-x: hidden;
 }
 
 body,
