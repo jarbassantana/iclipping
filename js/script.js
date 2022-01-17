@@ -70,9 +70,8 @@ const randomBgAddress =
 
 function randomImage() {
     const heroSection = document.getElementById('home')
-    heroSection.style.backgroundImage = 'url(' + randomBgAddress + ')'
-    // for (let index = 0; index < myAddressesArray.length; index++) {
-
-    // }
+    for (let index = 0; index < myAddressesArray.length; index++) {
+        heroSection.style.backgroundImage = 'url(' + randomBgAddress + ')'
+    }
 }
 randomImage()
