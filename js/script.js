@@ -57,11 +57,11 @@ function handleMenu(event) {
 menuMobile()
 
 const myAddressesArray = [
-    '../img/background1.jpg',
-    '../img/background2.jpg',
-    '../img/background3.jpg',
-    '../img/background4.jpg',
-    '../img/bg-clipping-strategic.jpg'
+    './img/background1.jpg',
+    './img/background2.jpg',
+    './img/background3.jpg',
+    './img/background4.jpg',
+    './img/bg-clipping-strategic.jpg'
 ]
 
 const randomBgAddress =
