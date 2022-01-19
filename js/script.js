@@ -61,7 +61,6 @@ const myAddressesArray = [
     '../img/background2.jpg',
     '../img/background3.jpg',
     '../img/background4.jpg',
-    '../img/bg-inteligence-corporate.jpg',
     '../img/bg-clipping-strategic.jpg'
 ]
 
