@@ -57,12 +57,12 @@ function handleMenu(event) {
 menuMobile()
 
 const myAddressesArray = [
-    './img/background1.jpg',
-    './img/background2.jpg',
-    './img/background3.jpg',
-    './img/background4.jpg',
-    './img/bg-inteligence-corporate.jpg',
-    './img/bg-clipping-strategic.jpg'
+    '../img/background1.jpg',
+    '../img/background2.jpg',
+    '../img/background3.jpg',
+    '../img/background4.jpg',
+    '../img/bg-inteligence-corporate.jpg',
+    '../img/bg-clipping-strategic.jpg'
 ]
 
 const randomBgAddress =
@@ -70,8 +70,10 @@ const randomBgAddress =
 
 function randomImage() {
     const heroSection = document.getElementById('home')
-    for (let index = 0; index < myAddressesArray.length; index++) {
-        heroSection.style.backgroundImage = 'url(' + randomBgAddress + ')'
+    if (heroSection) {
+        for (let index = 0; index < myAddressesArray.length; index++) {
+            heroSection.style.backgroundImage = 'url(' + randomBgAddress + ')'
+        }
     }
 }
 randomImage()
