@@ -72,6 +72,8 @@ function randomImage() {
     if (heroSection) {
         for (let index = 0; index < myAddressesArray.length; index++) {
             heroSection.style.backgroundImage = 'url(' + randomBgAddress + ')'
+            heroSection.style.backgroundRepeat = 'no-repeat'
+            heroSection.style.backgroundPosition = 'center'
         }
     }
 }
